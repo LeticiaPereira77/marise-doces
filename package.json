@@ -1,0 +1,20 @@
+{
+  "name": "marise-doces-com-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site MARISE DOCES com login de administradora e modo de preparação online",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "express-rate-limit": "^8.0.1"
+  }
+}
