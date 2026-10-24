@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#713b7c">
+  <title>MARISE DOCES | Biscoitos artesanais</title>
+  <meta name="description" content="Biscoitos amanteigados artesanais MARISE DOCES. Escolha seus pacotes e envie seu pedido pelo WhatsApp.">
+  <style>
+    :root{--purple:#713b7c;--purple-dark:#4f2b59;--lilac:#ead7ee;--pink:#f7e2ec;--cream:#fffaf5;--ink:#352936;--muted:#786b79;--gold:#d8b36a;--white:#fff}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.55}
+    a{color:inherit}header{position:sticky;top:0;background:rgba(255,250,245,.95);backdrop-filter:blur(10px);border-bottom:1px solid #eadce9;z-index:10}
+    .nav{max-width:1100px;margin:auto;padding:14px 22px;display:flex;justify-content:space-between;align-items:center;gap:20px}.brand{font-size:1.18rem;font-weight:900;color:var(--purple);letter-spacing:.8px;text-decoration:none}.brand span{display:block;font-size:.65rem;letter-spacing:2.5px;color:var(--muted);font-weight:750;margin-top:-3px}.navlinks{display:flex;gap:20px;align-items:center}.navlinks a{text-decoration:none;font-weight:700;font-size:.94rem}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:999px;padding:12px 19px;background:var(--purple);color:white;text-decoration:none;font-weight:800;cursor:pointer;transition:.2s}.btn:hover{background:var(--purple-dark);transform:translateY(-1px)}.btn.secondary{background:white;color:var(--purple);border:1px solid #d9c1de}
+    .hero{max-width:1100px;margin:auto;padding:65px 22px 54px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:42px}.eyebrow{color:var(--purple);font-size:.8rem;letter-spacing:2px;font-weight:900;text-transform:uppercase}.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.02;letter-spacing:-2px;margin:14px 0 20px;color:var(--purple-dark)}.hero p{font-size:1.1rem;color:var(--muted);max-width:560px}.hero-art{min-height:360px;border-radius:34px;overflow:hidden;box-shadow:0 20px 55px #713b7c20}.hero-art img{display:block;width:100%;height:100%;min-height:360px;object-fit:cover}.product-icon{height:130px;border-radius:17px;background:#f7e2ec;display:flex;align-items:center;justify-content:center;overflow:hidden;margin-bottom:17px}.product-icon img{width:100%;height:100%;object-fit:contain}
+    section{padding:54px 22px}.section-inner{max-width:1100px;margin:auto}.section-heading{text-align:center;margin-bottom:30px}.section-heading h2{font-size:clamp(1.8rem,4vw,2.7rem);margin:5px 0;color:var(--purple-dark)}.section-heading p{margin:0;color:var(--muted)}.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:white;border:1px solid #eddfeb;border-radius:24px;padding:24px;box-shadow:0 10px 28px #40203a08;display:flex;flex-direction:column}.product-icon{height:130px;border-radius:17px;background:linear-gradient(145deg,#fff0cf,#f3d8a6);display:flex;align-items:center;justify-content:center;font-size:4rem;margin-bottom:17px}.card h3{margin:0 0 7px;font-size:1.2rem}.card p{color:var(--muted);margin:0 0 14px}.price{font-size:1.65rem;font-weight:900;color:var(--purple);margin-top:auto;padding:5px 0 14px}.qty{display:flex;align-items:center;gap:10px;margin-bottom:12px}.qty button{width:34px;height:34px;border-radius:50%;border:1px solid #d9c7dc;background:white;color:var(--purple);font-size:1.1rem;cursor:pointer}.qty span{min-width:18px;text-align:center;font-weight:800}.card .btn{width:100%}
+    .christmas{background:linear-gradient(180deg,#fff7f5,#fceaf0)}
+    .christmas-banner{background:linear-gradient(120deg,#12643d,#b71f32);color:white;border-radius:26px;padding:28px;margin-bottom:28px;text-align:center;box-shadow:0 14px 34px #8b1d3020}
+    .christmas-banner h3{font-size:clamp(1.5rem,3vw,2.3rem);margin:5px 0}
+    .christmas-banner p{margin:0;color:#fff4f4}
+    .christmas-card .product-icon{height:220px;background:#fff; margin-bottom:17px}
+    .christmas-card .product-icon img{width:100%;height:100%;object-fit: cover}
+    .christmas-options{display:grid;gap:10px;margin:4px 0 12px}
+    .christmas-options label{display:flex;flex-direction:column;gap:5px;font-size:.9rem;font-weight:750}
+    .christmas-options select{font:inherit;padding:10px;border:1px solid #d8c8d7;border-radius:12px;background:white;width:100%}
+    .christmas-card .price{margin-top:0}
+    .about{background:var(--pink)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-box{background:#fffaf5;border-radius:25px;padding:28px}.about-box h3{margin-top:0;color:var(--purple)}.perks{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:20px}.perk{background:#fffaf5;border:1px solid #eddde7;border-radius:18px;padding:17px;text-align:center}.perk strong{display:block;color:var(--purple);margin-bottom:5px}.order{background:#fff}.order-grid{display:grid;grid-template-columns:1fr .85fr;gap:28px}.panel{background:var(--cream);border:1px solid #eadde5;border-radius:22px;padding:24px}.panel h3{margin-top:0}.cart-row{display:flex;justify-content:space-between;gap:15px;padding:12px 0;border-bottom:1px solid #e8dce4}.cart-row small{display:block;color:var(--muted)}.total{display:flex;justify-content:space-between;font-size:1.2rem;font-weight:900;padding:18px 0}.field{display:flex;flex-direction:column;gap:6px;margin-bottom:13px}.field label{font-weight:750;font-size:.9rem}.field input,.field textarea,.field select{font:inherit;padding:12px 13px;border:1px solid #d8c8d7;border-radius:12px;background:white;width:100%}.field textarea{min-height:85px;resize:vertical}.notice{font-size:.83rem;color:var(--muted)}footer{background:#38223c;color:#fff6f8;padding:30px 22px;text-align:center}footer p{margin:4px;color:#e0d1e1}
+    @media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:42px}.hero-art{min-height:300px}.products{grid-template-columns:1fr 1fr}.about-grid,.order-grid{grid-template-columns:1fr}.perks{grid-template-columns:1fr}.navlinks{gap:12px}.navlinks a:not(.btn){display:none}}
+    @media(max-width:520px){.products{grid-template-columns:1fr}.hero h1{letter-spacing:-1px}.hero-art{min-height:270px}.nav{padding:12px 16px}.navlinks a.btn{padding:10px 13px;font-size:.85rem}}
+  </style>
+</head>
+<body>
+<header><nav class="nav" aria-label="Navegação principal">
+  <a class="brand" href="#inicio">MARISE DOCES<span>BISCOITOS ARTESANAIS</span></a>
+  <div class="navlinks"><a href="#produtos">Produtos</a><a href="#natal">Especial de Natal</a><a href="#sobre">Nossa história</a><a href="#pedido" class="btn">Fazer pedido</a></div>
+</nav></header>
+<main>
+  <section class="hero" id="inicio">
+    <div><div class="eyebrow">Feitos com carinho, assados com amor</div>
+      <h1>Um docinho de carinho em cada mordida.</h1>
+      <p>Biscoitos amanteigados artesanais, delicados e perfeitos para acompanhar seu café, presentear alguém especial ou deixar o dia mais gostoso.</p>
+      <a class="btn" href="#produtos">Conhecer os produtos</a> <a class="btn secondary" href="#pedido" style="margin-left:7px">Montar pedido</a>
+    </div>
+    <div class="hero-art"><img src="biscoitos-marise.png" alt="Biscoitos amanteigados artesanais embalados para presente, da MARISE DOCES"></div>
+  </section>
+  <section id="produtos"><div class="section-inner">
+    <div class="section-heading"><div class="eyebrow">Nosso cantinho doce</div><h2>Escolha seus biscoitos</h2><p>Pacotes com 10 unidades • aproximadamente 50 g</p></div>
+    <div class="products">
+      <article class="card"><div class="product-icon"><img src="produto-tradicional.png" alt="Pacote de biscoitos amanteigados sem caixa de presente"></div><h3>Amanteigados tradicionais</h3><p>Clássicos, delicados e ótimos para acompanhar um café fresquinho.</p><div class="price">R$ 8,00</div><div class="qty"><button type="button" onclick="changeQty('trad',-1)" aria-label="Diminuir quantidade">−</button><span id="qty-trad">0</span><button type="button" onclick="changeQty('trad',1)" aria-label="Aumentar quantidade">+</button></div><button class="btn" onclick="addToCart('trad')">Adicionar ao pedido</button></article>
+      <article class="card"><div class="product-icon"><img src="produto-kit3.png" alt="Pacotes de biscoitos amanteigados sem caixa de presente"></div><h3>Kit com 3 pacotes</h3><p>Uma opção para compartilhar com a família ou presentear.</p><div class="price">R$ 22,00</div><div class="qty"><button type="button" onclick="changeQty('kit',-1)" aria-label="Diminuir quantidade">−</button><span id="qty-kit">0</span><button type="button" onclick="changeQty('kit',1)" aria-label="Aumentar quantidade">+</button></div><button class="btn" onclick="addToCart('kit')">Adicionar ao pedido</button></article>
+      <article class="card"><div class="product-icon"><img src="produto-kit5.png" alt="Pacotes de biscoitos amanteigados sem caixa de presente"></div><h3>Kit com 5 pacotes</h3><p>Para festas, lembrancinhas ou para ter um estoque de doçura em casa.</p><div class="price">R$ 35,00</div><div class="qty"><button type="button" onclick="changeQty('festa',-1)" aria-label="Diminuir quantidade">−</button><span id="qty-festa">0</span><button type="button" onclick="changeQty('festa',1)" aria-label="Aumentar quantidade">+</button></div><button class="btn" onclick="addToCart('festa')">Adicionar ao pedido</button></article>
+    </div><p class="notice" style="text-align:center;margin-top:18px">Os pedidos e a forma de pagamento são combinados pelo WhatsApp. Consulte a disponibilidade para retirada.</p>
+  </div></section>
+
+  <section class="christmas" id="natal"><div class="section-inner">
+    <div class="christmas-banner">
+      <div class="eyebrow" style="color:#ffe2a6">Edição limitada • Festas de fim de ano</div>
+      <h3>🎄 Especial de Natal MARISE DOCES 🎁</h3>
+      <p>Presentes deliciosos, embalados com carinho para surpreender quem você ama.</p>
+    </div>
+    <div class="section-heading"><div class="eyebrow">Monte seu presente</div><h2>Escolha seu kit natalino</h2><p>Escolha com ou sem caixa e com ou sem chocolate. O valor final será confirmado pelo WhatsApp.</p></div>
+    <div class="products">
+      <article class="card christmas-card">
+        <div class="product-icon"><img src="natal-neve-chocolate.png" alt="Caixa natalina de boneco de neve com biscoitos decorados com chocolate"></div>
+        <h3>Kit Boneco de Neve</h3>
+        <p>Biscoitos amanteigados em embalagem festiva, com opção de cobertura de chocolate.</p>
+        <div class="christmas-options">
+          <label>Embalagem
+            <select id="natal-emb-neve"><option value="saquinhos">Somente saquinhos</option><option value="caixa">Com caixa de Natal</option></select>
+          </label>
+          <label>Chocolate
+            <select id="natal-choc-neve"><option value="sem">Sem chocolate</option><option value="com">Com chocolate</option></select>
+          </label>
+          <label>Quantidade de kits
+            <select id="natal-q-neve"><option value="1">1 kit</option><option value="2">2 kits</option><option value="3">3 kits</option><option value="4">4 kits</option><option value="5">5 kits</option></select>
+          </label>
+        </div>
+        <div class="price">Sob consulta</div>
+        <button class="btn" onclick="addChristmasToCart('neve','Kit Boneco de Neve')">Adicionar ao pedido</button>
+      </article>
+      <article class="card christmas-card">
+        <div class="product-icon"><img src="natal-papai-noel-caixa.png" alt="Kit natalino com embalagem vermelha de Papai Noel e biscoitos"></div>
+        <h3>Kit Papai Noel</h3>
+        <p>Uma opção clássica e alegre para presentear no Natal.</p>
+        <div class="christmas-options">
+          <label>Embalagem
+            <select id="natal-emb-noel"><option value="saquinhos">Somente saquinhos</option><option value="caixa">Com caixa de Natal</option></select>
+          </label>
+          <label>Chocolate
+            <select id="natal-choc-noel"><option value="sem">Sem chocolate</option><option value="com">Com chocolate</option></select>
+          </label>
+          <label>Quantidade de kits
+            <select id="natal-q-noel"><option value="1">1 kit</option><option value="2">2 kits</option><option value="3">3 kits</option><option value="4">4 kits</option><option value="5">5 kits</option></select>
+          </label>
+        </div>
+        <div class="price">Sob consulta</div>
+        <button class="btn" onclick="addChristmasToCart('noel','Kit Papai Noel')">Adicionar ao pedido</button>
+      </article>
+      <article class="card christmas-card">
+        <div class="product-icon"><img src="natal-papai-noel-azul.png" alt="Kit natalino azul com Papai Noel e biscoitos amanteigados"></div>
+        <h3>Kit Natal Azul</h3>
+        <p>Uma embalagem colorida e encantadora para deixar o presente ainda mais especial.</p>
+        <div class="christmas-options">
+          <label>Embalagem
+            <select id="natal-emb-azul"><option value="saquinhos">Somente saquinhos</option><option value="caixa">Com caixa de Natal</option></select>
+          </label>
+          <label>Chocolate
+            <select id="natal-choc-azul"><option value="sem">Sem chocolate</option><option value="com">Com chocolate</option></select>
+          </label>
+          <label>Quantidade de kits
+            <select id="natal-q-azul"><option value="1">1 kit</option><option value="2">2 kits</option><option value="3">3 kits</option><option value="4">4 kits</option><option value="5">5 kits</option></select>
+          </label>
+        </div>
+        <div class="price">Sob consulta</div>
+        <button class="btn" onclick="addChristmasToCart('azul','Kit Natal Azul')">Adicionar ao pedido</button>
+      </article>
+    </div>
+    <p class="notice" style="text-align:center;margin-top:18px">Os kits natalinos são personalizados. Preço, quantidade de biscoitos e disponibilidade da caixa serão combinados pelo WhatsApp. A retirada é combinada pelo WhatsApp.</p>
+  </div></section>
+
+  <section class="about" id="sobre"><div class="section-inner about-grid">
+    <div><div class="eyebrow">Feito em pequenos lotes</div><h2 style="font-size:2.4rem;line-height:1.1;color:#4f2b59">Um toque artesanal em cada pacote.</h2><p style="color:var(--muted)">Na MARISE DOCES, cada biscoito é preparado com carinho para transformar pequenos momentos em lembranças gostosas.</p><div class="perks"><div class="perk"><strong>♡ Artesanal</strong><span>Produzido com cuidado</span></div><div class="perk"><strong>☕ Para o café</strong><span>Um acompanhamento delicioso</span></div><div class="perk"><strong>🎁 Para presentear</strong><span>Um mimo cheio de afeto</span></div></div></div>
+    <div class="about-box"><h3>Encomendas para eventos</h3><p>Quer biscoitos para uma reunião, festa ou lembrancinha? Fale conosco para combinar quantidades, prazos e detalhes do pedido.</p><a class="btn" href="#pedido">Solicitar orçamento</a></div>
+  </div></section>
+  <section class="order" id="pedido"><div class="section-inner">
+    <div class="section-heading"><div class="eyebrow">Vamos adoçar seu dia</div><h2>Finalize seu pedido</h2><p>Revise o carrinho e envie seu pedido para a MARISE DOCES pelo WhatsApp.</p></div>
+    <div class="order-grid">
+      <div class="panel"><h3>🛍️ Seu carrinho</h3><div id="cart"><p class="notice">Seu carrinho está vazio. Escolha um produto acima para começar.</p></div><div class="total"><span>Total estimado</span><span id="total">R$ 0,00</span></div><button class="btn" style="width:100%" onclick="checkout()">Enviar pedido pelo WhatsApp</button><p class="notice">Ao clicar, o WhatsApp abrirá com os itens escolhidos. O pedido será confirmado após contato.</p></div>
+      <div class="panel"><h3>📦 Dados para o pedido</h3><div class="field"><label for="nome">Seu nome</label><input id="nome" placeholder="Como podemos chamar você?"></div><div class="field"><label>Forma de recebimento</label><p class="pickup-only">📍 Somente retirada</p></div><div class="field"><label for="obs">Observações (opcional)</label><textarea id="obs" placeholder="Ex.: data desejada, quantidade para evento..."></textarea></div><p class="notice">O pagamento e os detalhes da retirada são combinados diretamente pelo WhatsApp.</p></div>
+    </div>
+  </div></section>
+</main>
+<footer><strong>MARISE DOCES</strong><p>Biscoitos artesanais feitos com carinho.</p><p>© <span id="year"></span> MARISE DOCES • Um docinho de carinho em cada mordida.</p><p style="margin-top:12px;font-size:.75rem;opacity:.7"><a href="/admin" style="color:inherit;text-decoration:none">Acesso da administração</a></p></footer>
+<script>
+const products = {
+  trad:{name:"Amanteigados tradicionais — 1 pacote (10 unidades)",price:8,qty:0},
+  kit:{name:"Kit com 3 pacotes",price:22,qty:0},
+  festa:{name:"Kit com 5 pacotes",price:35,qty:0}
+};
+const christmasProducts = [];
+const WHATSAPP_NUMBER = "5531989519616"; // Número configurado para pedidos.
+const brl = n => n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
+function changeQty(id,delta){products[id].qty=Math.max(0,products[id].qty+delta);document.getElementById("qty-"+id).textContent=products[id].qty}
+function addToCart(id){if(products[id].qty===0)products[id].qty=1;renderCart();document.getElementById("qty-"+id).textContent=products[id].qty;document.getElementById("pedido").scrollIntoView({behavior:"smooth"})}
+function addChristmasToCart(id,name){
+  const embalagem=document.getElementById("natal-emb-"+id).value;
+  const chocolate=document.getElementById("natal-choc-"+id).value;
+  const qty=Number(document.getElementById("natal-q-"+id).value);
+  const embalagemTxt=embalagem==="caixa"?"com caixa de Natal":"somente saquinhos";
+  const chocolateTxt=chocolate==="com"?"com chocolate":"sem chocolate";
+  const itemName=`${name} — ${embalagemTxt}, ${chocolateTxt}`;
+  const existing=christmasProducts.find(p=>p.name===itemName);
+  if(existing) existing.qty+=qty;
+  else christmasProducts.push({name:itemName,qty,price:null});
+  renderCart();
+  document.getElementById("pedido").scrollIntoView({behavior:"smooth"});
+}
+function renderCart(){const items=Object.values(products).filter(p=>p.qty>0);const allItems=[...items,...christmasProducts];const cart=document.getElementById("cart");if(!allItems.length){cart.innerHTML='<p class="notice">Seu carrinho está vazio. Escolha um produto acima para começar.</p>'}else{cart.innerHTML=allItems.map(p=>`<div class="cart-row"><div>${p.name}<small>${p.qty} × ${p.price===null?"preço a combinar":brl(p.price)}</small></div><strong>${p.price===null?"A combinar":brl(p.qty*p.price)}</strong></div>`).join("")}document.getElementById("total").textContent=brl(items.reduce((s,p)=>s+p.qty*p.price,0));if(christmasProducts.length)document.getElementById("total").textContent=items.length?brl(items.reduce((s,p)=>s+p.qty*p.price,0))+" + Natal a combinar":"Natal: preço a combinar"}
+function checkout(){const items=Object.values(products).filter(p=>p.qty>0);const allItems=[...items,...christmasProducts];if(!allItems.length){alert("Adicione pelo menos um produto ao pedido.");return}const nome=document.getElementById("nome").value.trim()||"Não informado";const entrega="Somente retirada";const obs=document.getElementById("obs").value.trim()||"Nenhuma";const total=items.reduce((s,p)=>s+p.qty*p.price,0);let msg=`Olá! Gostaria de fazer um pedido na MARISE DOCES.\n\nNome: ${nome}\n\n`;msg+=allItems.map(p=>p.price===null?`• ${p.name} — ${p.qty} kit(s) (preço a combinar)`:`• ${p.name} — ${p.qty} × ${brl(p.price)} = ${brl(p.qty*p.price)}`).join("\n");msg+=`\n\nTotal estimado: ${christmasProducts.length?brl(total)+" + kits de Natal a combinar":brl(total)}\nForma de recebimento: ${entrega}\nObservações: ${obs}\n\nPode confirmar disponibilidade para retirada e formas de pagamento?`;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank","noopener")}
+document.getElementById("year").textContent=new Date().getFullYear();renderCart();
+</script>
+</body>
+</html>
